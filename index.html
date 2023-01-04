@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <h1 id="title">Social Media Survey Form</h1>
+    <p id="description">Help us to improve our platform</p>
+  <form id="survey-form">
+    <div class="mb-3">
+      
+    <label id="name-label" for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Enter your name" required="required">
+  </div>
+  <div class="mb-3">
+    <label id="email-label" for="email" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email" required="required">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label id="number-label" for="number" class="form-label">Age</label>
+    <input type="number" class="form-control" id="number" placeholder="Enter your age" required="required" min="0" step="5" max="100">
+  </div>
+  <div class="mb-3">
+    <label for="gender" class="form-label">Gender</label>
+   <select id="dropdown" class="form-select" aria-label="Default select example">
+  <option selected>Select your gender</option>
+  <option value="1">Male</option>
+  <option value="2">Female</option>
+  <option value="3">Other</option>
+</select>
+  </div>
+   <div class='parent'>
+    Which Social Media Platform do you use?
+    <br><br>
+  <div class="mb-3 form-check">
+    <input type="checkbox" name="time" class="form-check-input" id="exampleCheck1" value="everyday">
+    <label class="form-check-label" for="exampleCheck1">Facebook</label>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" name="time" class="form-check-input" id="exampleCheck2" value="often">
+    <label class="form-check-label" for="exampleCheck2">Instagram</label>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" name="time" class="form-check-input" id="exampleCheck3" value="occationally">
+    <label class="form-check-label" for="exampleCheck3">Twitter</label>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" name="time" class="form-check-input" id="exampleCheck4" value="never">
+    <label class="form-check-label" for="exampleCheck4">Snapchat</label>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" name="time" class="form-check-input" id="exampleCheck4" value="never">
+    <label class="form-check-label" for="exampleCheck4">Twitch</label>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" name="time" class="form-check-input" id="exampleCheck4" value="never">
+    <label class="form-check-label" for="exampleCheck4">Pinterest</label>
+  </div>
+  </div>
+  
+  <div class='parent'>
+    How often do you use this social media?
+    <br><br>
+  <div class="mb-3 form-check child inline-block-child">
+    <input type="radio" name="time" class="form-check-input" id="exampleCheck1" value="everyday">
+    <label class="form-check-label" for="exampleCheck1">Everyday</label>
+  </div>
+  <div class="mb-3 form-check child inline-block-child">
+    <input type="radio" name="time" class="form-check-input" id="exampleCheck2" value="often">
+    <label class="form-check-label" for="exampleCheck2">Often</label>
+  </div>
+  <div class="mb-3 form-check child inline-block-child">
+    <input type="radio" name="time" class="form-check-input" id="exampleCheck3" value="occationally">
+    <label class="form-check-label" for="exampleCheck3">Occasionally</label>
+  </div>
+  <div class="mb-3 form-check child inline-block-child">
+    <input type="radio" name="time" class="form-check-input" id="exampleCheck4" value="never">
+    <label class="form-check-label" for="exampleCheck4">Never</label>
+  </div>
+  </div>
+  <div class="mb-3">
+  <label for="textarea" class="form-label">Feedback</label>
+  <textarea class="form-control" id="textarea" rows="3"></textarea>
+</div>
+  
+  <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
